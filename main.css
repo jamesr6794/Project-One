@@ -1,33 +1,52 @@
-body { 
-    background-color:antiquewhite;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+body {
+    text-align: center;
+    background: aliceblue;
+  }
 
-.board {
-    border: 1px solid;
-    display: flex;
-    flex-wrap: wrap;
-    height: 240px;
-    width: 280px;
-}
-
-.board div {
-    height: 40px;
-    width: 40px;
-}
-
-.hidden {
-    display: none;
-}
-
-.player-one {
+  h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 10px;
+  }
+  
+  #connect4 {
+    background-color: skyblue;
+    display: inline-block;
+  }
+  
+  .col {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  .col.empty {
+    cursor: pointer;
+  }
+  
+  .next-red {
     background-color: red;
-    border-radius: 10px;
-}
+  }
+  
+  .next-black {
+    background-color: black;
+  }
+  
+  .col.red {
+    background-color: red;
+  }
+  
+  .col.black {
+    background-color: black;
+  }
 
-.player-two {
-    background-color: blue;
-    border-radius: 10px;
-}
+  #restart {
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    color: snow;
+    margin: 10px
+  }
