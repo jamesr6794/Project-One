@@ -59,8 +59,8 @@ class Connect4 {
       $board.on('mouseenter', '.col.empty', function() {
         if (that.finishGame) return;
         const col = $(this).data('col');
-        const $lastEmptyCell = findLastEmptyCell(col);
-        $lastEmptyCell.addClass(`next-${that.player}`);
+        const $lastEmptySlot = findLastEmptyCell(col);
+        $lastEmptySlot.addClass(`next-${that.player}`);
       });
   
       $board.on('mouseleave', '.col', function() {
@@ -70,14 +70,14 @@ class Connect4 {
       $board.on('click', '.col.empty', function() {
         if (that.finishGame) return;
         const col = $(this).data('col');
-        const $lastEmptyCell = findLastEmptyCell(col);
-        $lastEmptyCell.removeClass(`empty next-${that.player}`);
-        $lastEmptyCell.addClass(that.player);
-        $lastEmptyCell.data('player', that.player);
+        const $lastEmptySlot = findLastEmptyCell(col);
+        $lastEmptySlot.removeClass(`empty next-${that.player}`);
+        $lastEmptySlot.addClass(that.player);
+        $lastEmptySlot.data('player', that.player);
   
         const winner = that.checkForWinner(
-          $lastEmptyCell.data('row'), 
-          $lastEmptyCell.data('col')
+          $lastEmptySlot.data('row'), 
+          $lastEmptySlot.data('col')
         )
         if (winner) {
           that.finishGame = true;
