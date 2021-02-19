@@ -17,4 +17,4 @@
  <br>
  <h2>Future Add-ons</h2>
   
-  <a href=https://jamesr6794.github.io/>Deployed Site</a>
+  <a href=https://jamesr6794.github.io/index>Deployed Site</a>
