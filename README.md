@@ -14,5 +14,7 @@
   <li>CSS</li>
   <li>Javascript/JQuery</li>
   <li>VS Code</li></ul>
+ <br>
+ <h2>Future Add-ons</h2>
   
   <a href=https://jamesr6794.github.io/>Deployed Site</a>
