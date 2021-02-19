@@ -137,7 +137,7 @@ class Connect4 {
         return checkWin({i: 1, j: 1}, {i: -1, j: -1});
       }
   
-      function checkVerticals() {
+      function checkVertical() {
         return checkWin({i: -1, j: 0}, {i: 1, j: 0});
       }
   
@@ -145,7 +145,7 @@ class Connect4 {
         return checkWin({i: 0, j: -1}, {i: 0, j: 1});
       }
   
-      return checkVerticals() || 
+      return checkVertical() || 
         checkHorizontals() || 
         checkDiagonalLtoR() ||
         checkDiagonalRtoL();
