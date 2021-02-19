@@ -16,5 +16,9 @@
   <li>VS Code</li></ul>
  <br>
  <h2>Future Add-ons</h2>
+ <ul><li>Scoreboard</li>
+  <li>AI vs User Option</li>
+  <li>Players enter their name instead of being "red" or "black"</li>
+  <li>Chip fall down animation</li></ul>  
   
   <a href=https://jamesr6794.github.io/index>Deployed Site</a>
