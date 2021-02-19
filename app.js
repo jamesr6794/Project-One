@@ -103,17 +103,17 @@ class Connect4 {
         let total = 0;
         let i = row + direction.i;
         let j = col + direction.j;
-        let $next = $getSlot(i, j);
+        let $nextMove = $getSlot(i, j);
         while (i >= 0 &&
           i < that.rows &&
           j >= 0 &&
           j < that.columns && 
-          $next.data('player') === that.player
+          $nextMove.data('player') === that.player
         ) {
           total++;
           i += direction.i;
           j += direction.j;
-          $next = $getSlot(i, j);
+          $nextMove = $getSlot(i, j);
         }
         return total;
       }
