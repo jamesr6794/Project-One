@@ -13,6 +13,6 @@
 <ul><li>HTML</li>
   <li>CSS</li>
   <li>Javascript/JQuery</li>
-  <li>VS Code</li>
+  <li>VS Code</li></ul>
   
   <a href=https://jamesr6794.github.io/>Deployed Site</a>
