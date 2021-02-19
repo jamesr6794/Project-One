@@ -24,7 +24,7 @@ body {
   }
   
   .col.empty {
-    cursor: pointer;
+    cursor: crosshair;
   }
   
   .next-red {
