@@ -81,7 +81,7 @@ class Connect4 {
         )
         if (winner) {
           that.finishGame = true;
-          alert(`Game Over! Player ${that.player} has won!`);
+          alert(`That's game. Player ${that.player} wins`);
           $('.col.empty').removeClass('empty');
           return;
         }
