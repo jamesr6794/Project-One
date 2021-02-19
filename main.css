@@ -45,6 +45,7 @@ body {
 
   #restart {
     background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     width: 200px;
     height: 60px;
     color: snow;
