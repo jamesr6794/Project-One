@@ -141,12 +141,12 @@ class Connect4 {
         return checkWin({i: -1, j: 0}, {i: 1, j: 0});
       }
   
-      function checkHorizontals() {
+      function checkHorizontal() {
         return checkWin({i: 0, j: -1}, {i: 0, j: 1});
       }
   
       return checkVertical() || 
-        checkHorizontals() || 
+        checkHorizontal() || 
         checkDiagonalLtoR() ||
         checkDiagonalRtoL();
     }
