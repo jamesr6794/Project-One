@@ -46,11 +46,11 @@ class Connect4 {
       const that = this;
   
       function findLastEmptyCell(col) {
-        const cells = $(`.col[data-col='${col}']`);
-        for (let i = cells.length - 1; i >= 0; i--) {
-          const $cell = $(cells[i]);
-          if ($cell.hasClass('empty')) {
-            return $cell;
+        const slots = $(`.col[data-col='${col}']`);
+        for (let i = slots.length - 1; i >= 0; i--) {
+          const $slot = $(slots[i]);
+          if ($slot.hasClass('empty')) {
+            return $slot;
           }
         }
         return null;
