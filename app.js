@@ -90,12 +90,12 @@ class Connect4 {
         that.onMove();
         $(this).trigger('mouseenter');
       });
-    }
+    } 
   
     checkForWinner(row, col) {
       const that = this;
   
-      function $getCell(i, j) {
+      function $getSlot(i, j) {
         return $(`.col[data-row='${i}'][data-col='${j}']`);
       }
   
@@ -103,7 +103,7 @@ class Connect4 {
         let total = 0;
         let i = row + direction.i;
         let j = col + direction.j;
-        let $next = $getCell(i, j);
+        let $next = $getSlot(i, j);
         while (i >= 0 &&
           i < that.rows &&
           j >= 0 &&
@@ -113,7 +113,7 @@ class Connect4 {
           total++;
           i += direction.i;
           j += direction.j;
-          $next = $getCell(i, j);
+          $next = $getSlot(i, j);
         }
         return total;
       }
