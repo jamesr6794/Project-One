@@ -1,7 +1,7 @@
 $(document).ready(function() {
     const connect4 = new Connect4('#connect4')
   
-    connect4.onPlayerMove = function() {
+    connect4.onMove = function() {
       $('#player').text(connect4.player);
     }
     
@@ -17,7 +17,7 @@ class Connect4 {
       this.player = 'red';
       this.selector = selector;
       this.finishGame = false;   
-      this.onPlayerMove = function() {};
+      this.onMove = function() {};
       this.createBoard();
       this.addEventListener();
     }
@@ -87,7 +87,7 @@ class Connect4 {
         }
   
         that.player = (that.player === 'red') ? 'black' : 'red';
-        that.onPlayerMove();
+        that.onMove();
         $(this).trigger('mouseenter');
       });
     }
@@ -153,6 +153,6 @@ class Connect4 {
   
     restart () {
       this.createBoard();
-      this.onPlayerMove();
+      this.onMove();
     }
   }
